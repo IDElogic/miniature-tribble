@@ -1,0 +1,95 @@
+.featured {
+    height: 90vh;
+    position: relative;
+  
+    .category {
+      position: absolute;
+      top: 80px;
+      left: 50px;
+      font-size: 30px;
+      font-weight: 500;
+      color:aliceblue;
+      display: flex;
+      align-items: center;
+  
+      select {
+        cursor: pointer;
+        font-family: 'Roboto Mono', monospace;
+        background-color:rgba(2,0,3, .5);
+        border: none;
+        color:aliceblue;
+        font-size: 16px;
+        margin-left: 20px;
+        padding: 16px 20px;
+        border-radius: 5px;
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+  
+    .info {
+      font-family: 'Roboto Mono', monospace;
+      width:50%;
+      position: absolute;
+      left: 50px;
+      bottom: 100px;
+      color:blanchedalmond;
+      display: flex;
+      flex-direction: column;
+      background: rgba(2,0,3,.3);
+      padding: 20px 60px 40px 60px;
+      border-left: .2px solid gold;
+  
+      .title {
+        font-family: 'Righteous', cursive;
+        font-weight: 700;
+        font-size: 80px;
+        color:gold;
+        text-shadow: 2px 4px 8px rgba(2,0,3,.9);   
+      }
+  
+      .desc {
+        margin: 40px 0;
+        font-family: 'Roboto Mono', monospace;
+        color:aliceblue;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: justify;
+      }
+  
+      .buttons {
+        display: flex;
+  
+        button {
+          padding:20px 30px;
+          border: none;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          font-weight: 500;
+          margin-right: 10px;
+          cursor: pointer;
+  
+          &.play {
+            background-color: white;
+            color: var(--main-color);
+          }
+  
+          &.more {
+            background-color:blanchedalmond;
+            color: var(--main-color);
+          }
+  
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
